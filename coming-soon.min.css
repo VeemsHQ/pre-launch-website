@@ -27,14 +27,14 @@ video {
     z-index: 0
 }
 
-@media (pointer:coarse) and (hover:none) {
+/* @media (pointer:coarse) and (hover:none) {
     body {
         background-size: cover
     }
     body video {
         display: none
     }
-}
+} */
 
 .overlay {
     position: absolute;
