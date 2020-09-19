@@ -184,3 +184,8 @@ video {
 .input {
     font-weight: 300!important
 }
+
+
+.btn-discord img {
+    width: 180px;
+}
