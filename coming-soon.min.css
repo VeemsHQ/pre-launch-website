@@ -191,3 +191,7 @@ video {
 .btn-discord img {
     width: 170px;
 }
+
+.model {
+    z-index:999
+}
