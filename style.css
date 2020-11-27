@@ -3,8 +3,8 @@
 body {
 	font-family: TerminalDosisMedium, Helvetica, sans-serif;
 	background-image: url(http://static.kim.com/images/bg_textures/09bd3fe1.bg_texture.jpg);
-	background-color: #121212;
-	color: #fff;
+	background-color: #fff;
+	color: #ddd;
 	font-size: 100%;
 	min-width: 1000px;
 	margin: 0;

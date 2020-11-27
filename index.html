@@ -22,7 +22,7 @@
         }
 
         body {
-            background: #000 url('bg_texture.jpg') repeat;
+            background: #fff;
             color: #b3b3b3 !important;
             font-family: TerminalDosisMedium, Helvetica, sans-serif !important;
         }
@@ -35,14 +35,13 @@
             object-fit: cover;
         }
 
-        .masthead-bg,
-        body {
-            background: #000 url('bg_texture.jpg') repeat;
+        .masthead-bg {
+            background: rgba(255,255,255,0.9);
         }
 
         h1,
         h2,
-        h3 {
+        h3,h4,h5 {
             font-family: TerminalDosisMedium, Helvetica, sans-serif !important
         }
 
@@ -53,13 +52,22 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: #000 url('bg_texture.jpg') repeat;
+            background: #fff;
             opacity: .7;
             z-index: 1;
         }
 
         .logo {
             /* max-width: 450px; */
+        }
+        .btn-secondary {
+            border-color:#008FFF; background: #008FFF
+        }
+        .btn-secondary:hover {
+            border-color:#0174cc; background: #0174cc
+        }
+        .btn-secondary:focus {
+            border-color:#0174cc; background: #0174cc
         }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -83,24 +91,22 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 my-auto">
-                    <div class="masthead-content text-white py-5 py-md-0">
+                    <div class="masthead-content text-dark py-5 py-md-0">
 
-                        <h2 class="h4 mt-3">YouTube was great.</h2>
-                        <h2 class="h4 ">But things changed.</h2>
-                        <h2 class="h4 ">And they just let it happen.</h2>
+                        <h2 class="h4 font-weight-bold mt-3">YouTube was great.</h2>
+                        <h2 class="h4 font-weight-bold ">But things changed.</h2>
+                        <h2 class="h4 font-weight-bold ">And they just let it happen.</h2>
 
-                        <hr class="bg-dark my-4" />
+                        <hr class="bg-light my-4" />
 
                         <p class="mt-3">We're working hard building your next generation video sharing site.<br />It's
                             open-source, with freedom of speech values.</p>
 
-                        <hr class="bg-dark my-4" />
-
-                        <p class="mb-4">We are currently invite-only.</p>
+                        <hr class="bg-light my-4" />
 
                         <div>
                             <button class="btn btn-secondary pt-2 pb-2 pl-4 pr-4" type="submit" data-toggle="modal"
-                                data-target="#exampleModal" id="submit-button" style="width:170px">Request an
+                                data-target="#exampleModal" id="submit-button" style="font-weight: bold; width:170px; ">Request an
                                 invite</button>
                         </div>
 
@@ -108,8 +114,11 @@
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="createSyncModalLabel">Request an invitation</h5>
+                                    </div>
                                     <div class="modal-body">
                                         <form class="input-group  form-els" id="invite-form" method="POST"
                                             target="https://sheet2api.com/v1/CMMyLxNrQj_b/video-project-request-invite/">
@@ -150,8 +159,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <div>codename:</div>
-                            <img src="mark.png" alt="project 4.9.476" style="max-height: 20px"
+                            <img src="mark.png" alt="project 4.9.476" style="max-height: 100px"
                                 class="img-fluid logo mt-3 mb-2" />
                         </div>
                     </div>

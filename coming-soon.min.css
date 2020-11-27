@@ -123,7 +123,7 @@ video {
     position: absolute;
     margin-bottom: 2rem;
     width: 100%;
-    z-index: 2
+    z-index: 2;
 }
 
 .social-icons ul {
@@ -135,18 +135,20 @@ video {
 .social-icons ul>li {
     margin-left: 1rem;
     margin-right: 1rem;
-    display: inline-block
+    display: inline-block;
+    color: #0174cc !important
 }
 
 .social-icons ul>li>a {
     display: block;
-    color: #fff;
-    background-color: #000;
+    color: #ddd;
+    background-color: #fff;
     border-radius: 100%;
     font-size: 2rem;
     line-height: 4rem;
     height: 4rem;
-    width: 4rem
+    width: 4rem;
+    color: #0174cc !important
 }
 
 @media (min-width:768px) {
@@ -178,7 +180,7 @@ video {
         width: 4rem
     }
     .social-icons ul>li>a:hover {
-        background-color: #111
+        background-color: #eee
     }
 }
 
