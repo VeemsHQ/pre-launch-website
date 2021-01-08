@@ -36,12 +36,14 @@
         }
 
         .masthead-bg {
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.9);
         }
 
         h1,
         h2,
-        h3,h4,h5 {
+        h3,
+        h4,
+        h5 {
             font-family: TerminalDosisMedium, Helvetica, sans-serif !important
         }
 
@@ -60,17 +62,23 @@
         .logo {
             /* max-width: 450px; */
         }
+
         .btn-secondary {
-            border-color:#008FFF; background: #008FFF
+            border-color: #008FFF;
+            background: #008FFF
         }
+
         .btn-secondary:hover {
-            border-color:#0174cc; background: #0174cc
+            border-color: #0174cc;
+            background: #0174cc
         }
+
         .btn-secondary:focus {
-            border-color:#0174cc; background: #0174cc
+            border-color: #0174cc;
+            background: #0174cc
         }
     </style>
-<script async defer data-domain="veems.tv" src="https://plausible.io/js/plausible.js"></script>
+    <script async defer data-domain="veems.tv" src="https://plausible.io/js/plausible.js"></script>
 </head>
 
 <body>
@@ -98,7 +106,8 @@
 
                         <div>
                             <button class="btn btn-secondary pt-2 pb-2 pl-4 pr-4" type="submit" data-toggle="modal"
-                                data-target="#exampleModal" id="submit-button" style="font-weight: bold; width:170px; ">Request an
+                                data-target="#exampleModal" id="submit-button"
+                                style="font-weight: bold; width:170px; ">Request an
                                 invite</button>
                         </div>
 
@@ -109,7 +118,7 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="createSyncModalLabel">Request an invitation</h5>
+                                        <h5 class="modal-title text-dark" id="createSyncModalLabel">Request an invitation</h5>
                                     </div>
                                     <div class="modal-body">
                                         <form class="input-group  form-els" id="invite-form" method="POST"
@@ -124,19 +133,20 @@
                                             </div>
                                         </form>
                                         <div class="d-none done-els">
-                                            <p class="alert alert-success">We'll be in touch.</p>
+                                            <p class="alert alert-success">Thanks! We'll be in touch.</p>
 
-                        <div class="mt-3">
-                            <a title="Keep up to date on our Discord" href="https://discord.gg/RjCZMtZ"
-                                class="btn-discord"><img src="https://i.imgur.com/GWP3ANV.png"
-                                    alt="Keep up to date on our Discord" /></a>
-                        </div>
+                                            <div class="mt-3 text-center">
+                                                <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&screen_name=VeemsHQ&tw_p=followbutton" class="text-primary">Follow us on Twitter</a>
+                                                &nbsp;-&nbsp;
+                                                <a href="https://discord.gg/RjCZMtZ"class="text-primary">Join us on Discord</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary form-els" id="form-submit">Request an
+                                        <button type="button" class="btn btn-secondary form-els"
+                                            id="form-submit">Request an
                                             invite</button>
-                                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +156,7 @@
 
                         <div class="mt-3">
                             <a title="Keep up to date on our Discord" href="https://discord.gg/RjCZMtZ"
-                                class="btn-discord"><img src="https://i.imgur.com/GWP3ANV.png"
+                                class="btn-discord"><img src="discord.png"
                                     alt="Keep up to date on our Discord" /></a>
                         </div>
 
@@ -162,7 +172,7 @@
     <div class="social-icons">
         <ul class="list-unstyled text-center mb-0">
             <li class="list-unstyled-item">
-                <a href="https://twitter.com/VeemsHQ/" target="_blank">
+                <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&screen_name=VeemsHQ&tw_p=followbutton" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
             </li>
@@ -173,6 +183,34 @@
             </li>
         </ul>
     </div>
+
+
+    <div class="modal fade exit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="createSyncModalLabel">Subscribe to our mailing list</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p class="text-dark">Occasional product updates. No spam, ever.</p>
+                    <form class="form-inline d-flex" id="email-list-form" method="POST"
+                        target="https://sheet2api.com/v1/CMMyLxNrQj_b/video-project-request-invite/">
+                        <div class="input-group col">
+                            <input type="email" name="email" class="form-control" placeholder="Enter your Email..."
+                                required="required">
+                        </div>
+                        <button type="button" class="btn btn-secondary col" id="email-list-form-submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&screen_name=VeemsHQ&tw_p=followbutton" class="text-primary d-block  text-center">Follow us on Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://sheet2api.com/v1/template.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -180,6 +218,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"
         integrity="sha512-kBFfSXuTKZcABVouRYGnUo35KKa1FBrYgwG4PAx7Z2Heroknm0ca2Fm2TosdrrI356EDHMW383S3ISrwKcVPUw=="
         crossorigin="anonymous"></script>
+    <script src="jquery.exit-modal.js"></script>
     <script>
 
         $('#exampleModal').modal({
@@ -191,25 +230,71 @@
             $('#invite-form').submit();
         });
 
+        $('#email-list-form-submit').click(function () {
+            $('#email-list-form').submit();
+        });
+
+        $("#email-list-form").submit(function (event) {
+            event.preventDefault();
+            var form = $('#email-list-form')
+            if (form[0].checkValidity() === true) {
+                var formData = {
+                    'email': form.find('input[name=email]').val(),
+                    'channel_url': '',
+                    'mailing_list': true,
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: form.attr('target'),
+                    data: formData
+                }).done(function (data) {
+                    alert('Thank you. We\'ll be in touch!')
+                });
+            } else {
+                alert('Please fill out the form');
+            }
+
+        });
+
         $("#invite-form").submit(function (event) {
             event.preventDefault();
             var form = $('#invite-form')
             console.log(form[0].checkValidity());
-            if(form[0].checkValidity() === true) {
+            if (form[0].checkValidity() === true) {
                 var formData = {
                     'email': form.find('input[name=email]').val(),
-                    'channel_url': form.find('input[name=channel_url]').val()
+                    'channel_url': form.find('input[name=channel_url]').val(),
+                    'mailing_list': false
                 };
-            $.ajax({
-                type: 'POST',
-                url: form.attr('target'),
-                data: formData
-            }).done(function (data) {
+                $.ajax({
+                    type: 'POST',
+                    url: form.attr('target'),
+                    data: formData
+                }).done(function (data) {
                     $('.form-els').hide();
                     $('.done-els').removeClass('d-none');
                     $('.done-els').show();
                 });
+            } else {
+                alert('Please fill out the form');
             }
+        });
+
+        var timer;
+        var exitModalParams = {
+            numberToShown: 5,
+            callbackOnModalShown: function () {
+                timer = setTimeout(function () {
+                    window.location.href = "http://";
+                }, 4000)
+            },
+            callbackOnModalHide: function () {
+                clearTimeout(timer);
+            }
+        }
+        $(document).ready(function () {
+
+            $('.exit-modal').exitModal(exitModalParams);
         });
     </script>
 </body>
