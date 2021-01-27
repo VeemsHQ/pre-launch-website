@@ -24,7 +24,7 @@
         body {
             background: #fff;
             color: #b3b3b3 !important;
-            font-family: TerminalDosisMedium, Helvetica, sans-serif !important;
+            font-family: Helvetica, sans-serif !important;
         }
 
         a {
@@ -109,8 +109,7 @@
                         <div>
                             <button class="btn btn-secondary pt-2 pb-2 pl-4 pr-4" type="submit" data-toggle="modal"
                                 data-target="#exampleModal" id="submit-button"
-                                style="font-weight: bold; width:170px; ">Request an
-                                invite</button>
+                                style="font-weight: bold; width:190px; ">Request an invite</button>
                         </div>
 
 
@@ -139,11 +138,12 @@
                                             <p class="alert alert-success">Thanks! We'll be in touch.</p>
 
                                             <div class="mt-3 text-center">
-                                                <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&screen_name=VeemsHQ&tw_p=followbutton"
-                                                    class="text-primary">Follow us on Twitter</a>
-                                                &nbsp;-&nbsp;
-                                                <a href="https://discord.gg/RjCZMtZ" class="text-primary">Join us on
-                                                    Discord</a>
+                                                <a href="https://t.me/VeemsHQ"
+                                                class="text-primary">Telegram Channel</a> ·
+                                            <a href="https://veems.tv/discord"
+                                                class="text-primary">Discord</a> ·
+                                            <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&screen_name=VeemsHQ&tw_p=followbutton"
+                                                class="text-primary">Twitter</a>
                                             </div>
                                         </div>
                                     </div>
@@ -151,18 +151,11 @@
                                         <button type="button" class="btn btn-secondary form-els"
                                             id="form-submit">Request an
                                             invite</button>
-                                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
-
-                        <div class="mt-3">
-                            <a title="Keep up to date on our Discord" href="https://discord.gg/RjCZMtZ"
-                                class="btn-discord"><img src="discord.png" alt="Keep up to date on our Discord" /></a>
-                        </div>
 
                         <div class="mt-4">
                             <img src="mark.png" alt="Veems logo" style="max-height: 100px"
@@ -194,25 +187,29 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header  d-flex justify-content-center">
                     <h5 class="modal-title text-dark" id="createSyncModalLabel">Subscribe to our mailing list</h5>
 
                 </div>
                 <div class="modal-body">
-                    <p class="text-dark">Occasional product updates. No spam, ever.</p>
-                    <form class="form-inline d-flex" id="email-list-form" method="POST"
+                    <p class="text-dark text-center">Occasional product updates. No spam, ever.</p>
+                    <form class="form" id="email-list-form" method="POST"
                         target="https://sheet2api.com/v1/CMMyLxNrQj_b/video-project-request-invite/">
                         <div class="input-group col">
-                            <input type="email" name="email" class="form-control" placeholder="Enter your Email..."
+                            <input type="email" name="email" class="form-control rounded-0" placeholder="Enter your Email..."
                                 required="required">
+                                <button type="button" class="btn btn-secondary  rounded-right rounded-0"
+                                    id="email-list-form-submit">Subscribe</button>
                         </div>
-                        <button type="button" class="btn btn-secondary col"
-                            id="email-list-form-submit">Subscribe</button>
                     </form>
                 </div>
-                <div class="modal-footer text-center">
+                <div class="modal-footer text-align-center d-flex justify-content-center font-weight-bold" style="font-size:110%">
+                    <a href="https://t.me/VeemsHQ"
+                        class="text-primary">Telegram Channel</a> ·
+                    <a href="https://veems.tv/discord"
+                        class="text-primary">Discord</a> ·
                     <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&screen_name=VeemsHQ&tw_p=followbutton"
-                        class="text-primary d-block  text-center">Follow us on Twitter</a>
+                        class="text-primary">Twitter</a>
                 </div>
             </div>
         </div>
